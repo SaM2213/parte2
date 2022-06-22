@@ -1,0 +1,34 @@
+<div class="container w-75 bg-secondary mt-5 rounded shadow">
+  <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block">
+          <!-- <img src="https://es-mb.theepochtimes.com/assets/uploads/2021/11/2021-Corolla-Hatchback-Special-Edition_001-1500x1001.jpg" width="750" alt=""> -->
+
+      </div>
+      <div class="col p-5 rounded-end">
+          <div class="text-end">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrp5tF65UULZZ6SmfTPyfL-I0q1z5edpDULg&usqp=CAU" width="48" alt="">
+          </div>
+          <h2 class="fw-bold text-center py-4">Bienvenido a "FUNKOMANIA"</h2>
+          <!-- Login -->
+          <form action="">
+              <div class="mb-4">
+                  <label for="email" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" name="email" [(ngModel)]="usuario.Correo">
+              </div>
+              <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" name="password" [(ngModel)]="usuario.Password">
+              </div>
+              <!-- <div class="mb-4 form-check">
+                  <input type="checkbox" name="connected" class="form-check-input">
+                  <label for="connected" class="form-check-label">Mantenerme conectado</label>
+              </div> -->
+              <div class="d-grid">
+                  <button type="submit" class="btn btn-dark" (click)="Acceder()">Iniciar Sesion</button>
+              </div>
+              <li><hr class="dropdown-divider"></li>
+
+          </form>
+      </div>
+  </div>
+</div>
